@@ -1,0 +1,57 @@
+/* Убираем точки на списке */
+ul {
+  list-style: none;
+}
+body {
+  font-family: Roboto;
+}
+p {
+  font-style: normal;
+}
+a {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+/* Ховер-меняет цвет при наведении */
+.color-change:hover {
+  color: red;
+}
+/* Актив - при нажатии на ссылку меняет цвет */
+.color-change:active {
+  color: chartreuse;
+}
+/* Фокус логотипа */
+.logo:focus {
+  color: royalblue;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+}
+/* Часть цвета логотипа */
+.color-logo-web {
+  color: #2196f3;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.color-logo-studio {
+  color: black;
+}
+/* Секция 1 */
+.section {
+  line-height: 24px;
+}
+.section-title-1 {
+  color: darkgray;
+  line-height: 24px;
+}
+.section-paragraf {
+  color: #757575;
+  line-height: 24px;
+  font-size: 14px;
+}
+.title: {
+  font-size: 14px;
+}
