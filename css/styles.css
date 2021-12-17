@@ -137,3 +137,6 @@ button {
   letter-spacing: 0.03em;
   color: white;
 }
+.section-btn {
+  cursor: pointer;
+}
