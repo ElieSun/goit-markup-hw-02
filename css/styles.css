@@ -1,9 +1,14 @@
 /* Убираем точки на списке */
+:root {
+  --section-paragraf-color: #757575;
+  --section-title-color: #212121;
+  --font-family: "Roboto", sans-serif;
+}
 ul {
   list-style: none;
 }
-body {
-  font-family: Roboto;
+.body {
+  font-family: var(--font-family);
 }
 p {
   font-style: normal;
@@ -14,20 +19,34 @@ a {
 button {
   cursor: pointer;
 }
-/* Ховер-меняет цвет при наведении */
-.color-change:hover {
+/* Эффекты для интерактивных элементов */
+.header-link:hover {
+  color: blue;
+}
+.heder-link:active {
+  color: turquoise;
+}
+.heder-link:focus {
   color: red;
 }
-/* Актив - при нажатии на ссылку меняет цвет */
-.color-change:active {
-  color: chartreuse;
+/* Ссылки в шапке */
+.header-link {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--section-title-color);
 }
 /* Фокус логотипа */
 .logo:focus {
   color: royalblue;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
+  font-size: 26px;
+  line-height: calc (26 / 31);
 }
 /* Часть цвета логотипа */
 .color-logo-web {
@@ -35,23 +54,86 @@ button {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
+  font-size: 26px;
+  line-height: cal (26 / 31);
 }
 .color-logo-studio {
-  color: black;
+  color: var(--section-title-color);
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: cal (26 / 31);
 }
+
 /* Секция 1 */
-.section {
-  line-height: 24px;
-}
 .section-title-1 {
-  color: darkgray;
-  line-height: 24px;
+  font-family: var(--font-family);
+  background-color: #2f303a;
+  color: white;
+  font-style: normal;
+  font-weight: 900;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .section-paragraf {
-  color: #757575;
-  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  color: var(--section-paragraf-color);
+  line-height: calc(24 / 14);
   font-size: 14px;
 }
 .title: {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
   font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--section-title-color);
+}
+/* Секция заголовка "Чем мы занимаемся" */
+.section-title-2 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--section-title-color);
+}
+.section-title-3 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--section-title-color);
+}
+.footer {
+  background-color: #2f303a;
+}
+.address-link:hover {
+  color: blue;
+}
+.address-link:active {
+  color: turquoise;
+}
+.address-link:focus {
+  color: red;
+}
+.address-link: {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: white;
 }
