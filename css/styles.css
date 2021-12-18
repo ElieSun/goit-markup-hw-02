@@ -21,7 +21,7 @@ button {
 }
 /* Эффекты для интерактивных элементов */
 .header-link:hover {
-  color: blue;
+  color: #2196f3;
 }
 .heder-link:active {
   color: turquoise;
@@ -78,8 +78,8 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+/* Абзацы */
 .section-paragraf {
-  font-style: normal;
   font-weight: normal;
   color: var(--section-paragraf-color);
   line-height: calc(24 / 14);
@@ -116,27 +116,67 @@ button {
   letter-spacing: 0.03em;
   color: var(--section-title-color);
 }
+/* Подвал */
 .footer {
   background-color: #2f303a;
 }
 .address-link:hover {
-  color: blue;
+  color: #2196f3;
 }
 .address-link:active {
   color: turquoise;
 }
 .address-link:focus {
-  color: red;
+  color: #ffffff;
 }
-.address-link: {
+/* Секция адреса */
+.about-address {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: white;
+  color: #ffffff;
 }
+.address-link {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-link-maps {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.address-link-maps:hover {
+  color: #2196f3;
+}
+.address-link-maps:active {
+  color: turquoise;
+}
+.address-link-maps:focus {
+  color: #ffffff;
+}
+/* Кнопки */
 .section-btn {
   cursor: pointer;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: calc(30 / 16);
+  background: #2196f3;
+}
+.section-btn: :hover {
+  color: #4597f3;
 }
