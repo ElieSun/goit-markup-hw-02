@@ -14,20 +14,17 @@ p {
   font-style: normal;
 }
 a {
+  text-decoration: none;
   cursor: pointer;
 }
 button {
   cursor: pointer;
 }
 /* Эффекты для интерактивных элементов */
-.header-link:hover {
-  color: #2196f3;
-}
-.heder-link:active {
-  color: turquoise;
-}
+.header-link:hover,
+.heder-link:active,
 .heder-link:focus {
-  color: red;
+  color: #2196f3;
 }
 /* Ссылки в шапке */
 .header-link {
@@ -38,6 +35,15 @@ button {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--section-title-color);
+}
+.header-link-portfolio {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 /* Фокус логотипа */
 .logo:focus {
@@ -85,7 +91,7 @@ button {
   line-height: calc(24 / 14);
   font-size: 14px;
 }
-.title: {
+.title {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: bold;
@@ -169,14 +175,39 @@ button {
 /* Кнопки */
 .section-btn {
   cursor: pointer;
-  font-family: var(--font-family);
+  font-family: inherit;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
+  letter-spacing: 0.06px;
   color: #ffffff;
   line-height: calc(30 / 16);
   background: #2196f3;
+  border-radius: 4px;
+  border: none;
 }
-.section-btn: :hover {
-  color: #4597f3;
+.section-btn:hover,
+.section-btn:focus {
+  background-color: #188ce8;
+}
+.btn-grey:hover,
+.btn-grey:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.btn-grey {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background: #f5f4fa;
+  width: 128px;
+  height: 38px;
+  left: 576px;
+  top: 174px;
+  border-radius: 4px;
+  border: none;
 }
