@@ -36,6 +36,34 @@ button {
   letter-spacing: 0.02em;
   color: var(--section-title-color);
 }
+.header-link-mail {
+  color: #757575;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.header-link-mail:hover,
+.heder-link-mail:active,
+.heder-link-mail:focus {
+  color: #2196f3;
+}
+.header-link-tel {
+  color: #757575;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.header-link-tel:hover,
+.heder-link-tel:active,
+.heder-link-tel:focus {
+  color: #2196f3;
+}
 .header-link-portfolio {
   font-family: var(--font-family);
   font-style: normal;
@@ -175,7 +203,7 @@ button {
 /* Кнопки */
 .section-btn {
   cursor: pointer;
-  font-family: inherit;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -192,7 +220,8 @@ button {
 }
 .btn-grey:hover,
 .btn-grey:focus {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #2196f3;
+  color: white;
 }
 .btn-grey {
   font-family: Roboto;
