@@ -3,6 +3,10 @@
   --section-paragraf-color: #757575;
   --section-title-color: #212121;
   --font-family: "Roboto", sans-serif;
+  --font-family-header: "Raleway", sans-serif;
+}
+.header {
+  font-family: var(--font-family-header);
 }
 ul {
   list-style: none;
@@ -28,9 +32,9 @@ button {
 }
 /* Ссылки в шапке */
 .header-link {
-  font-family: var(--font-family);
+  font-family: var(--font-family-header);
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -38,9 +42,9 @@ button {
 }
 .header-link-mail {
   color: #757575;
-  font-family: var(--font-family);
+  font-family: var(--font-family-header);
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -52,9 +56,9 @@ button {
 }
 .header-link-tel {
   color: #757575;
-  font-family: var(--font-family);
+  font-family: var(--font-family-header);
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -64,10 +68,20 @@ button {
 .heder-link-tel:focus {
   color: #2196f3;
 }
-.header-link-portfolio {
+/* Подсветка Ссылки Студия */
+.header-link-studio {
   font-family: var(--font-family);
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.header-link-portfolio {
+  font-family: var(--font-family-header);
+  font-style: normal;
+  font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -76,7 +90,7 @@ button {
 /* Фокус логотипа */
 .logo:focus {
   color: royalblue;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-family-header);
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -85,7 +99,7 @@ button {
 /* Часть цвета логотипа */
 .color-logo-web {
   color: #2196f3;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-family-header);
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -93,7 +107,7 @@ button {
 }
 .color-logo-studio {
   color: var(--section-title-color);
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-family-header);
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -167,7 +181,7 @@ button {
 .about-address {
   font-family: var(--font-family);
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -252,14 +266,4 @@ button {
   font-weight: bold;
   font-size: 26px;
   line-height: cal (26 / 31);
-}
-/* Подсветка Ссылки Студия */
-.header-link-studio {
-  font-family: var(--font-family);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  color: #2196f3;
 }
