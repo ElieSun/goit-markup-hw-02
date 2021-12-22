@@ -2,11 +2,15 @@
 :root {
   --section-paragraf-color: #757575;
   --section-title-color: #212121;
+  --color-letter-white: #ffffff;
+  --color-letter-blue: #2196f3;
+  --active-link-color: royalblue;
+  --color-background: #2f303a;
   --font-family: "Roboto", sans-serif;
   --font-family-header: "Raleway", sans-serif;
 }
 .header {
-  font-family: var(--font-family-header);
+  font-family: var(--font-family);
 }
 ul {
   list-style: none;
@@ -28,11 +32,11 @@ button {
 .header-link:hover,
 .heder-link:active,
 .heder-link:focus {
-  color: #2196f3;
+  color: var(--color-letter-blue);
 }
 /* Ссылки в шапке */
 .header-link {
-  font-family: var(--font-family-header);
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -41,8 +45,8 @@ button {
   color: var(--section-title-color);
 }
 .header-link-mail {
-  color: #757575;
-  font-family: var(--font-family-header);
+  color: var(--section-paragraf-color);
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -52,11 +56,11 @@ button {
 .header-link-mail:hover,
 .heder-link-mail:active,
 .heder-link-mail:focus {
-  color: #2196f3;
+  color: var(--color-letter-blue);
 }
 .header-link-tel {
-  color: #757575;
-  font-family: var(--font-family-header);
+  color: var(--section-paragraf-color);
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -66,7 +70,7 @@ button {
 .header-link-tel:hover,
 .heder-link-tel:active,
 .heder-link-tel:focus {
-  color: #2196f3;
+  color: var(--color-letter-blue);
 }
 /* Подсветка Ссылки Студия */
 .header-link-studio {
@@ -76,20 +80,20 @@ button {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--color-letter-blue);
 }
 .header-link-portfolio {
-  font-family: var(--font-family-header);
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--color-letter-blue);
 }
 /* Фокус логотипа */
 .logo:focus {
-  color: royalblue;
+  color: var(--active-link-color);
   font-family: var(--font-family-header);
   font-style: normal;
   font-weight: bold;
@@ -98,7 +102,7 @@ button {
 }
 /* Часть цвета логотипа */
 .color-logo-web {
-  color: #2196f3;
+  color: var(--color-letter-blue);
   font-family: var(--font-family-header);
   font-style: normal;
   font-weight: bold;
@@ -117,8 +121,8 @@ button {
 /* Секция 1 */
 .section-title-1 {
   font-family: var(--font-family);
-  background-color: #2f303a;
-  color: white;
+  background-color: var(--color-background);
+  color: var(--color-letter-white);
   font-style: normal;
   font-weight: 900;
   line-height: calc(60 / 44);
@@ -133,17 +137,27 @@ button {
   line-height: calc(24 / 14);
   font-size: 14px;
 }
+.title-our-team {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+
+  color: var(--section-title-color);
+}
+/* Секция заголовка "Чем мы занимаемся" */
 .title {
   font-family: var(--font-family);
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--section-title-color);
 }
-/* Секция заголовка "Чем мы занимаемся" */
 .section-title-2 {
   font-family: var(--font-family);
   font-style: normal;
@@ -164,18 +178,26 @@ button {
   letter-spacing: 0.03em;
   color: var(--section-title-color);
 }
+.title-img {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: calc(36 / 16);
+  color: var(--section-title-color);
+}
 /* Подвал */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--color-background);
 }
 .address-link:hover {
-  color: #2196f3;
+  color: var(--color-letter-blue);
 }
 .address-link:active {
-  color: turquoise;
+  color: var(--section-paragraf-color);
 }
 .address-link:focus {
-  color: #ffffff;
+  color: var(--color-letter-blue);
 }
 /* Секция адреса */
 .about-address {
@@ -185,7 +207,7 @@ button {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--color-letter-white);
 }
 .address-link {
   font-family: var(--font-family);
@@ -194,58 +216,94 @@ button {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-letter-white);
 }
 .address-link-maps {
-  font-family: var(--font-family);
+  font-family: inherit;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--color-letter-white);
 }
 .address-link-maps:hover {
-  color: #2196f3;
+  color: var(--color-letter-blue);
 }
 .address-link-maps:active {
-  color: turquoise;
+  color: var(--active-link-color);
 }
 .address-link-maps:focus {
-  color: #ffffff;
+  color: var(--section-paragraf-color);
+}
+.address-link-mail {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--section-paragraf-color);
+}
+.address-link-mail:hover {
+  color: var(--color-letter-blue);
+}
+.address-link-mail:active {
+  color: var(--active-link-color);
+}
+.address-link-mail:focus {
+  color: var(--color-letter-white);
+}
+.address-link-tel {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--section-paragraf-color);
+}
+.address-link-tel:hover {
+  color: var(--color-letter-blue);
+}
+.address-link-tel:active {
+  color: var(--active-link-color);
+}
+.address-link-tel:focus {
+  color: var(--color-letter-white);
 }
 /* Кнопки */
 .section-btn {
   cursor: pointer;
-  font-family: Roboto;
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.06px;
-  color: #ffffff;
+  color: var(--color-letter-white);
   line-height: calc(30 / 16);
-  background: #2196f3;
+  background: var(--color-letter-blue);
   border-radius: 4px;
   border: none;
 }
 .section-btn:hover,
 .section-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--active-link-color);
 }
 .btn-grey:hover,
 .btn-grey:focus {
-  background-color: #2196f3;
-  color: white;
+  background-color: var(--color-letter-blue);
+  color: var(--color-letter-white);
 }
 .btn-grey {
-  font-family: Roboto;
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--section-title-color);
   background: #f5f4fa;
   width: 128px;
   height: 38px;
@@ -256,11 +314,11 @@ button {
 }
 /* <!-- Наша команда--> */
 .section-our-team {
-  background-color: #f5f4fa;
+  background-color: var(--color-letter-white);
 }
 /* Цвет части логотипа в футере */
 .color-logo-studio-address {
-  color: white;
+  color: var(--color-letter-white);
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
