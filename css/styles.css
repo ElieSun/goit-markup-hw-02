@@ -4,7 +4,7 @@
   --section-title-color: #212121;
   --color-letter-white: #ffffff;
   --color-letter-blue: #2196f3;
-  --active-link-color: royalblue;
+  --active-link-color: #188ce8;
   --color-background: #2f303a;
   --font-family: "Roboto", sans-serif;
   --font-family-header: "Raleway", sans-serif;
@@ -38,7 +38,7 @@ button {
 .header-link {
   font-family: var(--font-family);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -48,7 +48,7 @@ button {
   color: var(--section-paragraf-color);
   font-family: var(--font-family);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -119,7 +119,7 @@ button {
 }
 
 /* Секция 1 */
-.section-title-1 {
+.section-1 {
   font-family: var(--font-family);
   background-color: var(--color-background);
   color: var(--color-letter-white);
@@ -129,6 +129,18 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+/* Заголовок h1 */
+.section-title-1 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-letter-white);
 }
 /* Абзацы */
 .section-paragraf {
@@ -158,6 +170,7 @@ button {
   text-transform: uppercase;
   color: var(--section-title-color);
 }
+
 .section-title-2 {
   font-family: var(--font-family);
   font-style: normal;
@@ -181,7 +194,7 @@ button {
 .title-img {
   font-family: var(--font-family);
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 16);
   color: var(--section-title-color);
@@ -197,7 +210,7 @@ button {
   color: var(--section-paragraf-color);
 }
 .address-link:focus {
-  color: var(--color-letter-blue);
+  color: var(--color-letter-white);
 }
 /* Секция адреса */
 .about-address {
@@ -243,7 +256,7 @@ button {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: var(--section-paragraf-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 .address-link-mail:hover {
   color: var(--color-letter-blue);
@@ -261,7 +274,7 @@ button {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: var(--section-paragraf-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 .address-link-tel:hover {
   color: var(--color-letter-blue);
@@ -314,7 +327,7 @@ button {
 }
 /* <!-- Наша команда--> */
 .section-our-team {
-  background-color: var(--color-letter-white);
+  background-color: #f5f4fa;
 }
 /* Цвет части логотипа в футере */
 .color-logo-studio-address {
