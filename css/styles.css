@@ -11,6 +11,8 @@
 }
 .header {
   font-family: var(--font-family);
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 ul {
   list-style: none;
@@ -367,7 +369,7 @@ a {
 /* <!-- Наша команда--> */
 .section-our-team {
   background-color: #f5f4fa;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 /* Цвет части логотипа в футере */
 .color-logo-studio-address {
@@ -391,17 +393,54 @@ a {
   margin-bottom: 94px;
 }
 
+.main-nav {
+  display: flex;
+}
 .categories-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  mafgin-left: 50px;
+  align-items: center;
+  margin-left: 50px;
+}
+.categories-list .item:not(:last-child) {
+  margin-right: 0;
+}
+.item {
+  margin-left: 50px;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.categories-list-item {
-  mafgin-left: 50px;
+/* Расположение контактов */
+.categories-contact {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
 }
-
+.categories-list .categories-contact-tel:not(:last-child) {
+  margin-right: 0;
+}
+.categories-contact-mail {
+  display: block;
+  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.categories-contact-tel {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 215px;
+}
+/* .direction-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  margin-left: 331px;
+  padding-bottom: 32px;
+  justify-content: flex-end;
+} */
 .img-1 {
   margin-bottom: 94px;
 }
