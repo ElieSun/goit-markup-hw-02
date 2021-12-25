@@ -395,11 +395,12 @@ a {
 
 .main-nav {
   display: flex;
+  align-items: center;
 }
 .categories-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+
   margin-left: 50px;
 }
 .categories-list .item:not(:last-child) {
