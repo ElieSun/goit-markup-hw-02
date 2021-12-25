@@ -21,10 +21,12 @@ ul {
 p {
   font-style: normal;
 }
+/* Глобальный сброс стилей по селектору тега, то чтоне входит в нормалайз */
 a {
   text-decoration: none;
   cursor: pointer;
 }
+
 button {
   cursor: pointer;
   direction: none;
@@ -149,6 +151,8 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding-top: 200px;
+  margin-bottom: 94px;
 }
 /* Заголовок h1 */
 .section-title-1 {
@@ -160,6 +164,7 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding-bottom: 30px;
   color: var(--color-letter-white);
 }
 /* Абзацы */
@@ -200,6 +205,7 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--section-title-color);
+  margin-bottom: 50px;
 }
 .section-title-3 {
   font-family: var(--font-family);
@@ -210,6 +216,8 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--section-title-color);
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
 .title-img {
   font-family: var(--font-family);
@@ -222,7 +230,11 @@ a {
 /* Подвал */
 .footer {
   background-color: var(--color-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
 }
+
 .address-link:hover {
   color: var(--color-letter-blue);
 }
@@ -233,6 +245,9 @@ a {
   color: var(--color-letter-white);
 }
 /* Секция адреса */
+.logo-address {
+  padding-bottom: 20px;
+}
 .about-address {
   font-family: var(--font-family);
   font-style: normal;
@@ -250,6 +265,7 @@ a {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--color-letter-white);
+  padding-bottom: 9px;
 }
 .address-link-maps {
   font-family: inherit;
@@ -259,6 +275,7 @@ a {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--color-letter-white);
+  padding-bottom: 9px;
 }
 .address-link-maps:hover {
   color: var(--color-letter-blue);
@@ -277,6 +294,7 @@ a {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 9px;
 }
 .address-link-mail:hover {
   color: var(--color-letter-blue);
@@ -318,6 +336,7 @@ a {
   background: var(--color-letter-blue);
   border-radius: 4px;
   border: none;
+  margin-bottom: 200px;
 }
 .section-btn:hover,
 .section-btn:focus {
@@ -348,6 +367,7 @@ a {
 /* <!-- Наша команда--> */
 .section-our-team {
   background-color: #f5f4fa;
+  margin-bottom: 94px;
 }
 /* Цвет части логотипа в футере */
 .color-logo-studio-address {
@@ -357,4 +377,31 @@ a {
   font-weight: bold;
   font-size: 26px;
   line-height: cal (26 / 31);
+}
+
+/* --------Блочная модель-------- */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15 px;
+  margin: 0 auto;
+  outline: 2px solid #bb0505;
+}
+.action {
+  margin-bottom: 94px;
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  mafgin-left: 50px;
+}
+
+.categories-list-item {
+  mafgin-left: 50px;
+}
+
+.img-1 {
+  margin-bottom: 94px;
 }
