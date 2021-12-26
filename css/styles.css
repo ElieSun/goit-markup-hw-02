@@ -189,7 +189,7 @@ a {
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
-
+  margin: 30px 59px auto 60px;
   color: var(--section-title-color);
 }
 /* Секция заголовка "Чем мы занимаемся" */
@@ -527,7 +527,6 @@ a {
 .photo {
   display: flex;
   align-item: center;
-  justify-content: space-between;
 }
 .child-photo {
   display: flex;
@@ -543,4 +542,79 @@ a {
 }
 .child-photo .list-photo:last-child {
   margin-right: 0px;
+}
+
+/* Студия команда */
+.our-team {
+  display: flex;
+  align-item: center;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-team {
+  margin-right: 30px;
+  background: var(--color-letter-white);
+}
+.team .list-team:last-child {
+  margin-right: 0px;
+}
+
+.section-paragraf-1 {
+  font-weight: normal;
+  color: var(--section-paragraf-color);
+  line-height: calc(24 / 14);
+  font-size: 14px;
+  padding: 10px 70px 30px 70px;
+  width: 270px;
+  height: 75px;
+  left: 215px;
+  top: 800px;
+}
+
+.section-paragraf-2 {
+  font-weight: normal;
+  color: var(--section-paragraf-color);
+  line-height: calc(24 / 14);
+  font-size: 14px;
+  padding: 10px 61px 30px 62px;
+  width: 270px;
+  height: 75px;
+  left: 215px;
+  top: 800px;
+}
+
+.section-paragraf-3 {
+  font-weight: normal;
+  color: var(--section-paragraf-color);
+  line-height: calc(24 / 14);
+  font-size: 14px;
+  padding: 10px 97px 30px 97px;
+  width: 270px;
+  height: 75px;
+  left: 215px;
+  top: 800px;
+}
+
+.section-paragraf-4 {
+  font-weight: normal;
+  color: var(--section-paragraf-color);
+  line-height: calc(24 / 14);
+  font-size: 14px;
+  padding: 10px 91px 30px 92px;
+  width: 270px;
+  height: 75px;
+  left: 215px;
+  top: 800px;
+}
+.title-our-team-1 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  margin: 30px 80px auto 81px;
+  color: var(--section-title-color);
 }
