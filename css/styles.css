@@ -607,7 +607,6 @@ a {
   color: var(--section-paragraf-color);
   line-height: calc(24 / 14);
   font-size: 14px;
-  padding: 10px 70px 30px 70px;
   width: 270px;
   height: 75px;
   left: 215px;
@@ -680,6 +679,9 @@ a {
 }
 .list-img .images:last-child {
   margin-right: 0px;
+}
+.images {
+  border-bottom: 1px solid #ececec;
 }
 .header-nav {
   padding-left: 215px;
