@@ -181,11 +181,15 @@ a {
   top: 800px;
 }
 .section-paragraf-1 {
-  font-weight: normal;
+  font-weight: 400;
   color: var(--section-paragraf-color);
-  line-height: calc(24 / 14);
+  line-height: calc(30 / 16);
   font-size: 14px;
-  padding-left: 24px;
+  width: 322px;
+  height: 30px;
+  left: 239px;
+  top: 1050px;
+  letter-spacing: 0.03em;
 }
 .title-our-team {
   font-family: var(--font-family);
@@ -237,9 +241,10 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: calc(36 / 16);
+  line-height: calc(36 / 18);
   color: var(--section-title-color);
   padding: 20px 24px 4px 24px;
+  letter-spacing: 0.06em;
 }
 /* Подвал */
 .footer {
