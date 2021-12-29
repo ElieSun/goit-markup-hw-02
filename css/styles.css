@@ -9,7 +9,6 @@
   --font-family-header: "Raleway", sans-serif;
 }
 .header {
-  font-family: var(--font-family);
   border-bottom: 1px solid #ececec;
 }
 ul {
@@ -25,6 +24,7 @@ p {
 a {
   text-decoration: none;
   cursor: pointer;
+  display: block;
 }
 
 button {
@@ -65,6 +65,9 @@ a {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--section-title-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-link-mail {
   color: var(--section-paragraf-color);
@@ -74,11 +77,15 @@ a {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-link-mail:hover,
 .heder-link-mail:active,
 .heder-link-mail:focus {
   color: var(--color-letter-blue);
+  display: block;
 }
 .header-link-tel {
   color: var(--section-paragraf-color);
@@ -88,6 +95,9 @@ a {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-link-tel:hover,
 .heder-link-tel:active,
@@ -103,6 +113,9 @@ a {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--color-letter-blue);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-link-portfolio {
   font-family: var(--font-family);
@@ -251,10 +264,12 @@ a {
   background-color: var(--color-background);
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 215px;
-  width: 1600px;
 }
-
+.container-footer {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 .address-link:hover {
   color: var(--color-letter-blue);
 }
@@ -440,7 +455,6 @@ a {
 .section-our-team {
   background-color: #f5f4fa;
   padding-bottom: 94px;
-  width: 1600px;
 }
 /* Цвет части логотипа в футере */
 .color-logo-studio-address {
@@ -454,9 +468,9 @@ a {
 
 /* --------Блочная модель-------- */
 .container {
-  width: 1600px;
+  width: 1200px;
   padding-left: 15px;
-  padding-right: 15 px;
+  padding-right: 15px;
   margin: 0 auto;
   /* outline: 2px solid #bb0505; */
 }
@@ -483,9 +497,6 @@ a {
 }
 .item {
   margin-left: 50px;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 /* Расположение контактов */
@@ -500,17 +511,9 @@ a {
 }
 
 .categories-contact-mail {
-  display: block;
   margin-right: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
-.categories-contact-tel {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-right: 215px;
-}
+
 .img-1 {
   margin-bottom: 94px;
 }
@@ -551,7 +554,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 1170px;
-  margin-left: 215px;
 }
 .list {
   margin-right: 30px;
@@ -563,11 +565,7 @@ a {
 }
 
 /* Студия чем мы занимаемся - 3 фото расположение flex */
-.photo {
-  display: flex;
-  align-item: center;
-  margin-left: 215px;
-}
+
 .child-photo {
   display: flex;
   flex-wrap: wrap;
@@ -585,11 +583,7 @@ a {
 }
 
 /* Студия команда */
-.our-team {
-  display: flex;
-  align-item: center;
-  padding-left: 215px;
-}
+
 .team {
   display: flex;
   flex-wrap: wrap;
@@ -683,9 +677,7 @@ a {
 .images {
   border-bottom: 1px solid #ececec;
 }
-.header-nav {
-  padding-left: 215px;
-}
+
 .rotate {
   padding-left: 215px;
 }
