@@ -1,4 +1,3 @@
-/* Убираем точки на списке */
 :root {
   --section-paragraf-color: #757575;
   --section-title-color: #212121;
@@ -11,6 +10,7 @@
 }
 .header {
   font-family: var(--font-family);
+  border-bottom: 1px solid #ececec;
 }
 ul {
   list-style: none;
@@ -21,12 +21,34 @@ ul {
 p {
   font-style: normal;
 }
+/* Глобальный сброс стилей по селектору тега, то чтоне входит в нормалайз */
 a {
   text-decoration: none;
   cursor: pointer;
 }
+
 button {
   cursor: pointer;
+  direction: none;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+  display: block;
 }
 /* Эффекты для интерактивных элементов */
 .header-link:hover,
@@ -129,6 +151,7 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding-top: 200px;
 }
 /* Заголовок h1 */
 .section-title-1 {
@@ -140,7 +163,10 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding-bottom: 30px;
   color: var(--color-letter-white);
+  max-width: 696px;
+  margin: 0 auto 30px auto;
 }
 /* Абзацы */
 .section-paragraf {
@@ -148,6 +174,22 @@ button {
   color: var(--section-paragraf-color);
   line-height: calc(24 / 14);
   font-size: 14px;
+
+  width: 270px;
+  height: 75px;
+  left: 215px;
+  top: 800px;
+}
+.section-paragraf-1 {
+  font-weight: 400;
+  color: var(--section-paragraf-color);
+  line-height: calc(30 / 16);
+  font-size: 14px;
+  width: 322px;
+  height: 30px;
+  left: 239px;
+  top: 1050px;
+  letter-spacing: 0.03em;
 }
 .title-our-team {
   font-family: var(--font-family);
@@ -156,7 +198,7 @@ button {
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
-
+  margin: 30px 59px auto 60px;
   color: var(--section-title-color);
 }
 /* Секция заголовка "Чем мы занимаемся" */
@@ -180,6 +222,7 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--section-title-color);
+  margin-bottom: 50px;
 }
 .section-title-3 {
   font-family: var(--font-family);
@@ -190,19 +233,28 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--section-title-color);
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
 .title-img {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: calc(36 / 16);
+  line-height: calc(36 / 18);
   color: var(--section-title-color);
+  padding: 20px 24px 4px 24px;
+  letter-spacing: 0.06em;
 }
 /* Подвал */
 .footer {
   background-color: var(--color-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
+  width: 1600px;
 }
+
 .address-link:hover {
   color: var(--color-letter-blue);
 }
@@ -213,6 +265,9 @@ button {
   color: var(--color-letter-white);
 }
 /* Секция адреса */
+.logo-address {
+  padding-bottom: 20px;
+}
 .about-address {
   font-family: var(--font-family);
   font-style: normal;
@@ -230,6 +285,7 @@ button {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--color-letter-white);
+  padding-bottom: 9px;
 }
 .address-link-maps {
   font-family: inherit;
@@ -239,6 +295,7 @@ button {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--color-letter-white);
+  padding-bottom: 9px;
 }
 .address-link-maps:hover {
   color: var(--color-letter-blue);
@@ -257,6 +314,7 @@ button {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 9px;
 }
 .address-link-mail:hover {
   color: var(--color-letter-blue);
@@ -286,6 +344,56 @@ button {
   color: var(--color-letter-white);
 }
 /* Кнопки */
+.section-btn-1 {
+  cursor: pointer;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06px;
+  color: var(--color-letter-white);
+  line-height: calc(30 / 16);
+  background: var(--color-letter-blue);
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 200px;
+
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+}
+.section-btn-1:hover,
+.section-btn-1:focus {
+  background-color: var(--active-link-color);
+}
+.btn-grey:hover,
+.btn-grey:focus {
+  background-color: var(--color-letter-blue);
+  color: var(--color-letter-white);
+}
+.btn-blue {
+  cursor: pointer;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06px;
+  color: var(--color-letter-white);
+  line-height: calc(30 / 16);
+  background: var(--color-letter-blue);
+  border-radius: 4px;
+  border: none;
+
+  width: 73px;
+  height: 38px;
+  left: 495px;
+  top: 174px;
+}
+.btn-blue:hover,
+.btn-blue:focus {
+  background-color: var(--active-link-color);
+}
 .section-btn {
   cursor: pointer;
   font-family: inherit;
@@ -298,16 +406,19 @@ button {
   background: var(--color-letter-blue);
   border-radius: 4px;
   border: none;
+  margin-bottom: 200px;
+
+  display: inline-block;
+  width: 73px;
+  height: 38px;
+  left: 495px;
+  top: 174px;
 }
 .section-btn:hover,
 .section-btn:focus {
   background-color: var(--active-link-color);
 }
-.btn-grey:hover,
-.btn-grey:focus {
-  background-color: var(--color-letter-blue);
-  color: var(--color-letter-white);
-}
+
 .btn-grey {
   font-family: var(--font-family);
   font-style: normal;
@@ -328,6 +439,8 @@ button {
 /* <!-- Наша команда--> */
 .section-our-team {
   background-color: #f5f4fa;
+  padding-bottom: 94px;
+  width: 1600px;
 }
 /* Цвет части логотипа в футере */
 .color-logo-studio-address {
@@ -337,4 +450,242 @@ button {
   font-weight: bold;
   font-size: 26px;
   line-height: cal (26 / 31);
+}
+
+/* --------Блочная модель-------- */
+.container {
+  width: 1600px;
+  padding-left: 15px;
+  padding-right: 15 px;
+  margin: 0 auto;
+  /* outline: 2px solid #bb0505; */
+}
+.action {
+  display: flex;
+  align-items: center;
+  width: 1600px;
+}
+
+/* !!!!ЭТО РОДИТЕЛЬ ГЛАВНОГО МЕНЮ НАВИГАЦИИ ВСЕХ ССЫЛОК И КНОПОК, СВОЙСТВО
+  align-items: center; СТАВИТ ИХ В ГОРИЗОНТАЛЬНОЕ ПОЛОЖЕНИЕ ОТНОСИТЕЛЬНО ГЛАВНОЙ ОСИ!!!!! */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: 50px;
+}
+.categories-list .item:not(:last-child) {
+  margin-right: 0;
+}
+.item {
+  margin-left: 50px;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* Расположение контактов */
+.categories-contact {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+/* Крайняя геометрия, во избежание выпадения списка из меню */
+.categories-list .categories-contact-tel:not(:last-child) {
+  margin-right: 0;
+}
+
+.categories-contact-mail {
+  display: block;
+  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.categories-contact-tel {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 215px;
+}
+.img-1 {
+  margin-bottom: 94px;
+}
+
+/* Страничка портфолио кнопки */
+.main-buttons {
+  margin-bottom: 34px;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+.main-btn {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 94px;
+}
+.main-btn-item {
+  display: inline-block;
+  align-items: center;
+}
+/* Задаем отступы между кнопками всех кроме последнего */
+
+.main-btn .main-btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+.section-btn {
+  display: inline-block;
+  width: 73px;
+  height: 38px;
+  left: 495px;
+  top: 174px;
+}
+/* Студия Список абзацев*/
+.action-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1170px;
+  margin-left: 215px;
+}
+.list {
+  margin-right: 30px;
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.action-list .list:last-child {
+  margin-right: 0px;
+}
+
+/* Студия чем мы занимаемся - 3 фото расположение flex */
+.photo {
+  display: flex;
+  align-item: center;
+  margin-left: 215px;
+}
+.child-photo {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-photo {
+  margin-right: 30px;
+
+  width: 370px;
+  height: 294px;
+  left: 215px;
+  top: 1061px;
+}
+.child-photo .list-photo:last-child {
+  margin-right: 0px;
+}
+
+/* Студия команда */
+.our-team {
+  display: flex;
+  align-item: center;
+  padding-left: 215px;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-team {
+  margin-right: 30px;
+  background: var(--color-letter-white);
+}
+.team .list-team:last-child {
+  margin-right: 0px;
+}
+
+.section-paragraf-1 {
+  font-weight: normal;
+  color: var(--section-paragraf-color);
+  line-height: calc(24 / 14);
+  font-size: 14px;
+  width: 270px;
+  height: 75px;
+  left: 215px;
+  top: 800px;
+}
+
+.section-paragraf-2 {
+  font-weight: normal;
+  color: var(--section-paragraf-color);
+  line-height: calc(24 / 14);
+  font-size: 14px;
+  padding: 10px 61px 30px 62px;
+  width: 270px;
+  height: 75px;
+  left: 215px;
+  top: 800px;
+}
+
+.section-paragraf-3 {
+  font-weight: normal;
+  color: var(--section-paragraf-color);
+  line-height: calc(24 / 14);
+  font-size: 14px;
+  padding: 10px 97px 30px 97px;
+  width: 270px;
+  height: 75px;
+  left: 215px;
+  top: 800px;
+}
+
+.section-paragraf-4 {
+  font-weight: normal;
+  color: var(--section-paragraf-color);
+  line-height: calc(24 / 14);
+  font-size: 14px;
+  padding: 10px 91px 30px 92px;
+  width: 270px;
+  height: 75px;
+  left: 215px;
+  top: 800px;
+}
+.title-our-team-1 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  margin: 30px 80px auto 81px;
+  color: var(--section-title-color);
+}
+.list-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-img {
+  display: flex;
+  align-items: center;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 215px;
+}
+.list-img > .images {
+  background: #ffffff;
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.list-img .images:last-child {
+  margin-right: 0px;
+}
+.images {
+  border-bottom: 1px solid #ececec;
+}
+.header-nav {
+  padding-left: 215px;
+}
+.rotate {
+  padding-left: 215px;
 }
