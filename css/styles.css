@@ -586,7 +586,7 @@ a {
 
 .team {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; -здесь не нужен потому что из-за него элементы перепрыгивают на соседнюю строку*/
 }
 .list-team {
   margin-right: 30px;
@@ -655,16 +655,11 @@ a {
 .list-img {
   display: flex;
   flex-wrap: wrap;
-}
-
-.section-img {
-  display: flex;
-  align-items: center;
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: 215px;
 }
+
 .list-img > .images {
   background: #ffffff;
   flex-basis: calc((100% - 90px) / 3);
